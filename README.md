@@ -9,5 +9,8 @@ You are then asked if you would like to use Numbers.
 After you have selected each option or chose to cancel which results in a "no".
 You are presented with your new generated password.
 
+You can access the generator here https://hamzar19.github.io/PasswordGenerator/
+
+
 
 Have a great day!
