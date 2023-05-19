@@ -1,3 +1,4 @@
+// Assignment Code
 var generateBtn = document.querySelector("#generate");
 
 function generatePassword() {
@@ -5,12 +6,16 @@ function generatePassword() {
   var numberSet = [1, 2, 3];
   var userPickedCharacterSet = [];
 
-  var pLength = parseInt(prompt("Enter a number between 1 and 150"));
+  // sets password length
 
+  var pLength = parseInt(prompt("Enter a number between 1 and 150"));
+ // run program to check for number, if false redirect for a number
+// setting up the values for the first prompt
   if (pLength >= 1 && pLength <= 150) {
     var isUpperCase = confirm("Do you want uppercase letters?");
     var isNumber = confirm("Do you want numbers?");
 
+    // if or else statement referring to Uppercase and Number prompts
     if (isUpperCase || isNumber) {
       if (isUpperCase) {
         userPickedCharacterSet = userPickedCharacterSet.concat(upperCaseSet);
@@ -18,7 +23,7 @@ function generatePassword() {
       if (isNumber) {
         userPickedCharacterSet = userPickedCharacterSet.concat(numberSet);
       }
-
+      
       var password = "";
       for (var i = 0; i < pLength; i++) {
         var randomChar =
@@ -38,11 +43,12 @@ function generatePassword() {
     return generatePassword();
   }
 }
-
+// Write password to the #password input
+// Function for writePassword with querySelector
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
   passwordText.value = password;
 }
-
+// added event listener to "click, writePassword"
 generateBtn.addEventListener("click", writePassword);
