@@ -12,5 +12,6 @@ You are presented with your new generated password.
 You can access the generator here https://hamzar19.github.io/PasswordGenerator/
 
 
+[!MyRemoteImage]https://www.dropbox.com/s/jxrdzajq8sy350e/Screenshot_20230518_233430_Chrome.jpg?dl=0
 
 Have a great day!
